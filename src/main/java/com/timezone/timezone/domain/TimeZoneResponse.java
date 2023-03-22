@@ -1,9 +1,5 @@
 package com.timezone.timezone.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-
 public class TimeZoneResponse {
     private String abbreviation;
     private String client_ip;
@@ -37,6 +33,18 @@ public class TimeZoneResponse {
 	}
 	public void setDatetime(String datetime) {
 		this.datetime = datetime;
+	}
+	public int getDay_of_week() {
+		return day_of_week;
+	}
+	public void setDay_of_week(int day_of_week) {
+		this.day_of_week = day_of_week;
+	}
+	public int getDay_of_year() {
+		return day_of_year;
+	}
+	public void setDay_of_year(int day_of_year) {
+		this.day_of_year = day_of_year;
 	}
 	public boolean isDst() {
 		return dst;
@@ -98,17 +106,8 @@ public class TimeZoneResponse {
 	public void setWeek_number(int week_number) {
 		this.week_number = week_number;
 	}
-	public int getDay_of_week() {
-		return day_of_week;
-	}
-	public void setDay_of_week(int day_of_week) {
-		this.day_of_week = day_of_week;
-	}
-	public int getDay_of_year() {
-		return day_of_year;
-	}
-	public void setDay_of_year(int day_of_year) {
-		this.day_of_year = day_of_year;
-	}
+
+    
+    
 
 }
